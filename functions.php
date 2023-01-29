@@ -1,7 +1,9 @@
 <?php 
 function  brp_theme_support() {
-wp_enqueue_style('style.css'); 
+// wp_enqueue_style('style.css'); 
 wp_enqueue_style('style', get_stylesheet_uri(), NULL, microtime(), all);
+// wp_enqueue_script('main', get_theme_file_uri('main.js'), NULL, microtime(), true);
+wp_enqueue_script("main", get_theme_file_uri('/js/main.js'));
 /* post formats */
 add_theme_support( 'post-formats', array( 'aside', 'quote' ) );
 

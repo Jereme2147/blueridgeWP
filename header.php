@@ -26,18 +26,17 @@
     <nav class="nav">
         <div class="gutsBox">
         <!-- need to work LOGO fade in and out -->
-            <div> 
+            <div class="fadeInLogo"> 
                 <img
                     src="<?php echo get_template_directory_uri()?>/media/brp-logo.jpg"
-                    class="fadeInLogo"
                 />
             </div>
         <!-- <NavMiddle /> -->
-        <div class="navMiddleContrainer">
+        <div class="navMiddleContainer">
             <h1 name="format-detection" content="telephone=no">
             828-733-3603
             </h1>
-            <ul class={middleStyles.links}>
+            <ul class="navMiddlelinks">
             <li>
                 <a href={"/services"} activeStyle={activeStyle}>
                 <h2>Services</h2>
@@ -69,14 +68,29 @@
                 </a>
             </li>
             </ul>
-            <!-- <Hamburger class={hamburgerStyles.hamburger} /> -->
+            <!-- begin hamburger section -->
+            <div>
+                <button
+                class="hamburger"
+                type="button"
+                onClick={this.handleClick}
+                >
+                    <span class="hamburgerBox">
+                        <span class="hamburgerInner"></span>
+                    </span>
+                </button>
+                    <div 
+                        class="menuDiv">
+                    <!-- <MobileMenu /> -->
+                    </div>
+            </div>
+            <!-- End hamburger -->
       </div>
         <!-- end nav Middle -->
         
-            <div>
+            <div class="fadeInMap">
                 <img
                     src="<?php echo get_template_directory_uri()?>/media/map.jpg"
-                    class="fadeInMap"
                 />
             </div>
         </div>
