@@ -383,4 +383,8 @@ p {
 
 .minus.isActive .hamburgerInner::after {
   bottom: 0;
+}
+
+.bannerImage {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
