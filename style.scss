@@ -7,7 +7,17 @@ Version: 1.0
 @import "./styles/reset.scss";
 
 .container {
-    display: flex;
-    flex-direction: column;
-    // min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    background-color: $grey;
+} 
+
+// navigation and banner
+.nav {
+    width: 100%;
+    background-color: $blue;
+    height: 20vh;
 }

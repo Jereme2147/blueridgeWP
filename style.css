@@ -50,6 +50,14 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(206, 211, 220);
+}
+
+.nav {
+  width: 100%;
+  background-color: rgb(78, 128, 152);
+  height: 20vh;
 }/*# sourceMappingURL=style.css.map */
