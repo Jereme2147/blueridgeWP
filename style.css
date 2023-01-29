@@ -58,6 +58,83 @@ p {
 
 .nav {
   width: 100%;
-  background-color: rgb(78, 128, 152);
   height: 20vh;
+  background: linear-gradient(to top, rgba(125, 185, 232, 0) 0%, rgb(78, 128, 152) 100%);
+  position: fixed;
+  z-index: 9;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 950px) {
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 75px;
+  }
+  .nav:hover {
+    background: rgb(78, 128, 152);
+  }
+}
+
+.quickNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 950px) {
+  .quickNav {
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.quickNav button {
+  background: rgb(163, 22, 33);
+  height: 75%;
+  width: 48%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-top-color: rgb(252, 247, 248);
+  border-left-color: rgb(252, 247, 248);
+  border-right-color: rgb(252, 247, 248);
+  border-bottom-color: rgb(252, 247, 248);
+  transition: 0.4s;
+}
+.quickNav button a {
+  color: rgb(252, 247, 248);
+  text-decoration: none;
+}
+.quickNav button a h2 {
+  font-size: 1rem;
+}
+@media (min-width: 950px) {
+  .quickNav button {
+    background: none;
+    width: 30%;
+    border-width: 2px;
+    border-top-color: rgb(252, 247, 248);
+    border-left-color: rgb(252, 247, 248);
+    border-right-color: rgb(252, 247, 248);
+    border-bottom-color: rgb(252, 247, 248);
+    box-shadow: 2px 2px rgb(54, 54, 54);
+  }
+  .quickNav button a {
+    color: rgb(163, 22, 33);
+  }
+  .quickNav button a h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+.quickNav button:hover {
+  background-color: rgb(252, 247, 248);
 }/*# sourceMappingURL=style.css.map */

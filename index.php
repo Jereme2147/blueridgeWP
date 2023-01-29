@@ -2,6 +2,6 @@
 get_header();
 ?>
     
-    <h1>index</h1>
+    <!-- <h1>index</h1> -->
 </body>
 </html>
