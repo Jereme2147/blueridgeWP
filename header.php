@@ -70,17 +70,16 @@
             </ul>
             <!-- begin hamburger section -->
             <div>
-                <button
-                class="hamburger"
-                type="button"
-                onClick={this.handleClick}
+                <button id="menu-icon"
+                    class="hamburger"
+                    type="button"
                 >
                     <span class="hamburgerBox">
                         <span class="hamburgerInner"></span>
                     </span>
                 </button>
                     <div 
-                        class="menuDiv">
+                        class="mobile-menu">
                     <!-- <MobileMenu /> -->
                     </div>
             </div>
