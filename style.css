@@ -137,4 +137,156 @@ p {
 }
 .quickNav button:hover {
   background-color: rgb(252, 247, 248);
+}
+
+.gutsBox {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 950px) {
+  .gutsBox {
+    flex-direction: row;
+  }
+}
+
+.fadeOutMap {
+  display: none;
+}
+@media (min-width: 950px) {
+  .fadeOutMap {
+    opacity: 0;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+  }
+  .fadeOutMap img {
+    height: 150px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.fadeInMap {
+  display: none;
+}
+@media (min-width: 950px) {
+  .fadeInMap {
+    opacity: 1;
+    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+  }
+  .fadeInMap img {
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+.fadeOutLogo {
+  opacity: 0;
+  display: flex;
+  width: 50%;
+}
+@media (min-width: 950px) {
+  .fadeOutLogo {
+    opacity: 0;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+    width: 25%;
+  }
+}
+.fadeOutLogo img {
+  width: 90%;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+  margin-left: auto;
+}
+@media (min-width: 950px) {
+  .fadeOutLogo img {
+    height: 60%;
+  }
+}
+
+.fadeInLogo {
+  opacity: 1;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+}
+@media (min-width: 950px) {
+  .fadeInLogo {
+    width: 25%;
+  }
+}
+.fadeInLogo img {
+  width: 90%;
+  border-radius: 5px;
+  align-self: center;
+}
+@media (min-width: 950px) {
+  .fadeInLogo img {
+    width: 75%;
+  }
+}
+
+.navMiddleContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+@media (min-width: 950px) {
+  .navMiddleContainer {
+    align-items: center;
+    width: 40%;
+  }
+}
+.navMiddleContainer h1 {
+  color: rgb(252, 247, 248);
+  text-shadow: 2px 1px 1px rgb(163, 22, 33);
+  font-size: 1.5rem;
+  align-self: flex-end;
+  padding: 5px 5px 0 0;
+}
+@media (min-width: 950px) {
+  .navMiddleContainer h1 {
+    align-self: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    height: 50%;
+  }
+}
+
+.navMiddlelinks {
+  display: none;
+}
+@media (min-width: 950px) {
+  .navMiddlelinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .navMiddlelinks a {
+    text-decoration: none;
+    color: rgb(252, 247, 248);
+    text-shadow: 2px 1px 1px rgb(54, 54, 54);
+  }
+  .navMiddlelinks a h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=style.css.map */

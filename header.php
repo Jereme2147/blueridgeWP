@@ -12,7 +12,7 @@
 <div class="quickNav"
      style="background-image: url(<?php echo get_template_directory_uri()?>/media/banner.jpg)">
          <button>
-            <!-- link need changing to href -->
+            <!-- a hrefed changing to href -->
             <a to={"/contact"}>
              <h2>Become a Customer</h2>
             </a>
@@ -24,5 +24,60 @@
          </button>
        </div>
     <nav class="nav">
+        <div class="gutsBox">
+        <!-- need to work LOGO fade in and out -->
+            <div> 
+                <img
+                    src="<?php echo get_template_directory_uri()?>/media/brp-logo.jpg"
+                    class="fadeInLogo"
+                />
+            </div>
+        <!-- <NavMiddle /> -->
+        <div class="navMiddleContrainer">
+            <h1 name="format-detection" content="telephone=no">
+            828-733-3603
+            </h1>
+            <ul class={middleStyles.links}>
+            <li>
+                <a href={"/services"} activeStyle={activeStyle}>
+                <h2>Services</h2>
+                </a>
+            </li>
+            <li>
+                <a href={"/"} activeStyle={activeStyle}>
+                <h2>Home</h2>
+                </a>
+            </li>
+            <li>
+                <a href={"/blog"} activeStyle={activeStyle}>
+                <h2>Blog</h2>
+                </a>
+            </li>
+            <li>
+                <a href={"/contact"} activeStyle={activeStyle}>
+                <h2>Contact</h2>
+                </a> 
+            </li>
+            <li>
+                <a href={"/products"} activeStyle={activeStyle}>
+                <h2>Products</h2>
+                </a>
+            </li>
+            <li>
+                <a href={"/safety"} activeStyle={activeStyle}>
+                <h2>Safety</h2>
+                </a>
+            </li>
+            </ul>
+            <!-- <Hamburger class={hamburgerStyles.hamburger} /> -->
+      </div>
+        <!-- end nav Middle -->
         
+            <div>
+                <img
+                    src="<?php echo get_template_directory_uri()?>/media/map.jpg"
+                    class="fadeInMap"
+                />
+            </div>
+        </div>
     </nav>
