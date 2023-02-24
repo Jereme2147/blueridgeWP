@@ -227,24 +227,38 @@ $navBack: linear-gradient(to top, rgba(125,185,232,0) 0%, $blue 100%);
     }
 
 }
-.navMiddlelinks {
+ .navMiddlelinks {
     display: none;
     @include desktop() {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        width: 100%;
-        justify-content: space-evenly;
-        a {
-            text-decoration: none;
-            color: $white;
-            text-shadow: 2px 1px 1px $black;
-            h2 {
-                font-size: 1.4rem;
-                font-weight: 500;
-            }
-            
+            display: flex; 
+            flex-direction: row;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+        div {
+            width: 100%;
+                ul {
+                display: flex; 
+                flex-direction: row;
+                list-style: none;
+                width: 100%;
+                justify-content: space-evenly;
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    text-shadow: 2px 1px 1px $black;
+                    &:hover {
+                        text-shadow: 2px 1px 1px $red;
+                    }
+                    h2 {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+                    
+                }
         }
+    }
+       
     }
 }
 

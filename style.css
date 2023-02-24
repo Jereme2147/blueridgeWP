@@ -280,12 +280,25 @@ p {
     width: 100%;
     justify-content: space-evenly;
   }
-  .navMiddlelinks a {
+  .navMiddlelinks div {
+    width: 100%;
+  }
+  .navMiddlelinks div ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .navMiddlelinks div ul a {
     text-decoration: none;
     color: rgb(252, 247, 248);
     text-shadow: 2px 1px 1px rgb(54, 54, 54);
   }
-  .navMiddlelinks a h2 {
+  .navMiddlelinks div ul a:hover {
+    text-shadow: 2px 1px 1px rgb(163, 22, 33);
+  }
+  .navMiddlelinks div ul a h2 {
     font-size: 1.4rem;
     font-weight: 500;
   }
