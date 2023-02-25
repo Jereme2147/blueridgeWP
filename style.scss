@@ -338,12 +338,17 @@ $navBack: linear-gradient(to top, rgba(125,185,232,0) 0%, $blue 100%);
 //   hamburger End
 
 //   Main Banner start
-.bannerImage {
-    position: relative;
-    // height: 500px;
-    // z-index: 5;
-    @include desktop() {
-        // top: 200px;
-    }
-}
+// .bannerImage {
+//     position: relative;
+//     height: 500px;
+//     z-index: 5;
+//     @include desktop() {
+//         top: 200px;
+//     }
+// }
 // Main banner end
+// ******banner images (big) *******
+//banner spacer for the top
+.bannerSpacer {
+    height: 200px;
+}

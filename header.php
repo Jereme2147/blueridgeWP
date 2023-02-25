@@ -66,3 +66,9 @@
             </div>
         </div>
     </nav>
+    <div class="bannerImage">
+    <?php 
+            require_once(plugin_dir_path(__FILE__) . '/assets/banner.php');
+            
+            ?> 
+    </div>

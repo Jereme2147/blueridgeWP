@@ -398,6 +398,6 @@ p {
   bottom: 0;
 }
 
-.bannerImage {
-  position: relative;
+.bannerSpacer {
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
