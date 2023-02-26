@@ -399,5 +399,35 @@ p {
 }
 
 .bannerSpacer {
-  height: 200px;
+  height: 270px;
+}
+
+.deskBackground img {
+  width: 100%;
+}
+
+.indexOpener {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(163, 22, 33);
+  padding: 10px 0;
+}
+@media (min-width: 950px) {
+  .indexOpener {
+    font-size: 2.5rem;
+  }
+}
+
+.sectionStyle {
+  display: flex;
+  flex-direction: column;
+  color: rgb(54, 54, 54);
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(206, 211, 220) 23%, rgb(252, 247, 248) 100%);
+  border-bottom: 1px solid rgb(163, 22, 33);
+}
+.sectionStyle div {
+  width: 100%;
+  max-width: 1000px;
+  border-bottom: 1px solid rgb(163, 22, 33);
 }/*# sourceMappingURL=style.css.map */

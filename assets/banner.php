@@ -21,7 +21,7 @@
             media="(max-width: 601px)"
         />
         <img
-            src="<?php echo get_template_directory_uri()?>/images/landing/park2x1500.webp"
+            src="<?php echo get_template_directory_uri()?>/media/landingHeader/trucksrear-dumpstergone-2400w.webp"
             alt="Newland iron bridge landscape photo on the river walk trail"
         />
     </picture>
