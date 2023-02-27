@@ -427,7 +427,53 @@ p {
   border-bottom: 1px solid rgb(163, 22, 33);
 }
 .sectionStyle div {
-  width: 100%;
   max-width: 1000px;
-  border-bottom: 1px solid rgb(163, 22, 33);
+}
+
+.moto {
+  padding: 5px 20px;
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+@media (min-width: 950px) {
+  .moto {
+    font-size: 2rem;
+  }
+}
+
+.bbb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.bbb img {
+  width: 35%;
+}
+.bbb h2 {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+@media (min-width: 950px) {
+  .bbb h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.serviceArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.serviceArea img {
+  width: 60%;
+  border-radius: 20px;
+}
+@media (min-width: 950px) {
+  .serviceArea {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
